@@ -5,7 +5,7 @@ exports.validateSong = (req, res, next) => {
         (data.hasOwnProperty('album') && typeof(data.album) === 'string') &&
         (data.hasOwnProperty('artist') && typeof(data.artist) === 'string') &&
         (data.hasOwnProperty('genre') && typeof(data.genre) === 'string') &&
-        (data.hasOwnProperty('release date') && typeof(data.releaseDate) === 'string')
+        (data.hasOwnProperty('releaseDate') && typeof(data.releaseDate) === 'string')
         ){
             return next();
         }
